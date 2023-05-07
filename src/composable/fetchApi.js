@@ -4,8 +4,8 @@ import get from 'lodash/get';
 import cloneDeep from 'lodash/cloneDeep';
 const initConfig = {
     fieldResponse: 'data.data', // field for result response data
-    filterChangeFetch: true,
-    immediate: true,
+    filterChangeFetch: true, // Change query value will refetch data
+    immediate: true, // fetch data when component create
 };
 
 const initFetchContext = reactive({
