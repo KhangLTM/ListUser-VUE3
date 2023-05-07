@@ -41,6 +41,7 @@ export default function useValidator(form) {
 
     const validate = formData => {
         if (!isSubmit.value) return;
+        errors.value = {};
         for (const key in formData) {
             const value = formData[key];
             const { label, rules } = form.find(field => field.key === key);
