@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .clicked {
+        @apply cursor-pointer hover:opacity-80 transition-opacity;
+    }
+    .sperator{
+        @apply border-solid border-gray-200;
+    }
+}
+
